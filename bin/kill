@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+fuser -k 5000/tcp
+fuser -k 9200/tcp
+fuser -k 9300/tcp
+fuser -k 5000/tcp
+fuser -k 5601/tcp
+
+docker stop $(docker ps -a -q)
+# Delete all containers
+docker rm $(docker ps -a -q)
+# Delete all images
+docker rmi $(docker images -q)
