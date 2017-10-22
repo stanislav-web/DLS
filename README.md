@@ -1,4 +1,4 @@
-### Logstash DLS. Distributed Logging System
+### Distributed Logging System based on ELK
 
 ![Logstash](https://www.elastic.co/guide/en/logstash/current/static/images/basic_logstash_pipeline.png)
 
